@@ -1,0 +1,191 @@
+mosquitto_sub -h 172.17.0.2 -t "eco/#" -v
+
+
+clear
+cd ..
+clear
+cd server/
+make clean
+cd ..
+cd db/
+make clean
+cd ..
+cd heating/
+make clean
+cd ..
+cd temp_sensors/
+make clean
+cd ..
+cd light_sensors/
+make clean
+cd ..
+cd interface/
+make clean
+cd ..
+cd inspector/ 
+make clean
+cd ..
+cd fake_sensor
+make clean
+clear
+
+cd ..
+cd motion_sensor
+make clean
+
+make clean OPTS=--no-cache
+make clean
+make clean OPTS=--no-cache
+clear
+make OPTS=--no-cache
+
+clear
+clear
+clear
+make clean
+clear
+make
+clear
+clear
+clear
+clear
+clear
+make run
+
+clear
+
+"174.19.0.40"
+
+"Alice Bob 123456"
+
+index.html
+
+174.19.0.20/cpanel
+domus
+admin
+
+^C
+
+make clean&make&make run
+
+
+    echo -n "IP: "
+    ifconfig eth0|grep inet[^6]|cut -d " " -f 10
+    cat /etc/hosts
+
+
+
+Alice Bob 123456
+
+Alice Bob-123456
+"Alice Bob-123456"
+Alice_Bob_123456
+
+clear
+clear
+clear
+clear
+
+cd ..
+
+resu
+
+
+
+
+cd PLG_sensor/
+
+cd domus/
+cd server/
+cd db/
+cd heating/
+cd temp_sensors/
+
+cd light_sensors/
+cd interface/
+cd inspector/
+
+
+cd ..
+cd domus/
+cd db/
+cd domus/
+cd heating/
+cd domus/
+cd temp_sensors/
+cd domus/
+cd light_sensors/
+cd motion_sensor
+cd domus/
+cd interface/
+cd domus/
+cd inspector/
+
+
+cd domus/
+
+
+
+cd db/
+make
+cd heating/
+make
+cd temp_sensors/
+make
+cd light_sensors/
+make
+cd interface/
+make
+cd inspector/
+make
+
+
+
+
+-------------------------
+
+Server
+ALL: Dockerfile
+	make .hostExtras
+
+    echo -n "IP: "
+    ifconfig eth0|grep inet[^6]|cut -d " " -f 10
+
+
+DB
+ALL: Dockerfile
+	make .hostExtras
+
+RUN chmod u+x /root/starter.sh
+COPY hostExtras /tmp/hostExtras
+
+/etc/init.d/ssh start
+cat /tmp/hostExtras >> /etc/hosts
+
+    echo -n "IP: "
+    ifconfig eth0|grep inet[^6]|cut -d " " -f 10
+
+Heating
+RUN chmod u+x /root/starter.sh
+COPY hostExtras /tmp/hostExtras
+
+ALL: Dockerfile app/alchemy.py
+	make .hostExtras
+
+/etc/init.d/ssh start
+cat /tmp/hostExtras >> /etc/hosts
+
+
+Fake
+/etc/init.d/ssh start
+cat /tmp/hostExtras >> /etc/hosts
+
+ALL: Dockerfile 
+	make .hostExtras
+
+RUN chmod u+x /root/starter.sh
+COPY hostExtras /tmp/hostExtras
+
+
+
+

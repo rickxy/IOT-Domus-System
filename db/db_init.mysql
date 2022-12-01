@@ -1,0 +1,33 @@
+CREATE TABLE `domus`.`home_settings` (
+  `param` VARCHAR(20) NOT NULL,
+  `value` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`param`));
+
+CREATE TABLE `domus`.`heating_profiles` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(85) NULL,
+  `temp` INTEGER NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `domus`.`family` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(85) NULL,
+  `gender` VARCHAR(85) NULL,
+  `sexuality` VARCHAR(85) NULL,
+  `disability` VARCHAR(85) NULL,
+  PRIMARY KEY (`id`));
+
+
+INSERT INTO `home_settings` (`param`,`value`) VALUES ('target_temp','21');
+INSERT INTO `home_settings` (`param`,`value`) VALUES ('interface_password','abracabracabra');
+
+INSERT INTO `heating_profiles` (`name`, `temp`) VALUES 
+       ('Unwelcome Guests',16),
+       ('Normal',21),
+       ('Empty House',18);
+
+INSERT INTO `domus`.`family` (`id`, `name`, `gender`, `sexuality`, `disability`) VALUES ('1', 'Olivya SMYTH', 'Female', 'Bisexual', 'None');
+INSERT INTO `domus`.`family` (`id`, `name`, `gender`, `sexuality`, `disability`) VALUES ('2', 'Jon Smyth', 'Male', 'Straight', 'None');
+INSERT INTO `domus`.`family` (`id`, `name`, `gender`, `sexuality`, `disability`) VALUES ('3', 'Samanthaa Smyth', 'Female', 'Undisclosed', 'Hearing Impared');
+INSERT INTO `domus`.`family` (`id`, `name`, `gender`, `sexuality`, `disability`) VALUES ('4', 'Sali BRAWN', 'Refuse to answer', 'Gay', 'Wheelchair');
+INSERT INTO `domus`.`family` (`id`, `name`, `gender`, `sexuality`, `disability`) VALUES ('5', 'Roseej Smyth', 'Female', 'Straight', 'None');
