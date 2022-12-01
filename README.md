@@ -7,7 +7,5 @@ a WiFi access point that is connected to the home router by ethernet
 cable. Domus devices will communicate with each other through the access
 point and traffic for outside of the system will be routed to the home
 network. To minimise cost and maximise interoperability, WEP security will be
-used for all Domus devices.
-
-Users will soon have access to many features through the web interface
+used for all Domus devices. Users will soon have access to many features through the web interface
 using the username "domus" and password "admin".
