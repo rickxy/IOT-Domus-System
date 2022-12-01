@@ -4,9 +4,7 @@ The Domus system uses WiFi as a communication medium between devices.
 Rather than rely on the user changing their settings or understanding
 how to configure WiFi, the system comes with a "bridge" -- essentially
 a WiFi access point that is connected to the home router by ethernet
-cable.
-
-Domus devices will communicate with each other through the access
+cable. Domus devices will communicate with each other through the access
 point and traffic for outside of the system will be routed to the home
 network.
 
